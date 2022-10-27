@@ -11,18 +11,19 @@ body * {
 body {
   background-image: linear-gradient(45deg, #174108, #000000);
   height: 100vh;
+  overflow: hidden;
 
   text-align: center;
 
-  transition: all 0.3s ease;
+  background-repeat: no-repeat;
 }
 
 body.blue {
   background-image: linear-gradient(45deg, #373d98, #000000);
-  height: 100vh;
+
 
   text-align: center;
-  transition: all 0.3s ease;
+  background-repeat: no-repeat;
 }
 
 header {
