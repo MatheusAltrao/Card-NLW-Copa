@@ -5,6 +5,8 @@ let buttonBlue = document.getElementById('blue')
 
 let buttonAll = document.querySelectorAll('button')
 
+let body = document.querySelector('body')
+
 buttonGreen.addEventListener('click', () => {
   removeClicked()
 
@@ -19,12 +21,13 @@ buttonBlue.addEventListener('click', () => {
 
   card.style.backgroundImage = "URl(./assets/bg-explorer.svg)"
   buttonBlue.classList.add('clicked')
-
+  body.classList.add('blue')
 
 })
-
 
 function removeClicked() {
   buttonGreen.classList.remove('clicked')
   buttonBlue.classList.remove('clicked')
+  body.classList.remove('blue')
 }
+
