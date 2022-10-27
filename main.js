@@ -8,6 +8,7 @@ let buttonAll = document.querySelectorAll('button')
 let body = document.querySelector('body')
 
 buttonGreen.addEventListener('click', () => {
+  transitionCard()
   removeClicked()
 
   card.style.backgroundImage = "URl(./assets/bg-ignite.svg)"
@@ -17,6 +18,7 @@ buttonGreen.addEventListener('click', () => {
 })
 
 buttonBlue.addEventListener('click', () => {
+  transitionCard()
   removeClicked()
 
   card.style.backgroundImage = "URl(./assets/bg-explorer.svg)"
@@ -30,4 +32,16 @@ function removeClicked() {
   buttonBlue.classList.remove('clicked')
   body.classList.remove('blue')
 }
+
+
+function transitionCard() {
+  card.style.opacity = "0"
+
+  setTimeout(() => {
+    card.style.opacity = '1'
+
+  }, 500)
+}
+
+
 
